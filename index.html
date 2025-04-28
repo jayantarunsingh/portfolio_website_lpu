@@ -4,22 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jayant | Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Research Section Styles */
+        .research {
+            padding: 80px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .research-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .research-item {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: flex-start;
+            gap: 25px;
+        }
+        
+        .research-icon {
+            font-size: 2.5rem;
+            color: rgba(6, 226, 255, 0.973);
+            padding-top: 5px;
+        }
+        
+        .research-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .research-content h4 {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .research-content span {
+            display: inline-block;
+            background: #f0f0f0;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .research-content ul {
+            margin-left: 20px;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .research-content ul li {
+            margin-bottom: 8px;
+        }
+        
+        .view-public {
+            display: inline-block;
+            padding: 10px 20px;
+            background: rgba(6, 226, 255, 0.973);
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .view-public:hover {
+            background: #05c7e6;
+            transform: translateY(-3px);
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <a href="#" class="logo"><span>Portfolio</span></a>
-            <div class="nav-center"> <!-- New wrapper div -->
+            <div class="nav-center">
                 <ul class="nav-links">
                     <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#certificates">Certificates</a></li>
+                    
+                    <li><a href="#research">Research</a></li>
                     <li><a href="#achievements">Achievements</a></li>
                     <li><a href="#experience">Education</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -38,7 +120,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Hi, I'm <span><br>Jayant Singh</span></h1>
-                <h2>Aspiring AI Engineer | NLP Enthusiast </h2>
+                <h2>Aspiring AI Engineer | NLP Enthusiast</h2>
                 <p class="tagline">A passionate computer science student with a focus on AI, machine learning, and NLP. Currently building solutions that leverage the power of artificial intelligence.</p>
                 <div class="cta-buttons">
                     <a href="#portfolio" class="btn btn-primary">View My Work</a>
@@ -46,7 +128,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="images/WhatsApp Image 2025-02-04 at 20.26.48_1c09dbec.jpg" alt="Professional Headshot">
+                <img src="images/AirBrush_20250425020502.jpg" alt="Professional Headshot">
             </div>
         </div>
     </section>
@@ -58,17 +140,16 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>Who I Am</h3>
-                    <p>Hello! I'm Jayant, a <span style="color: rgba(6, 226, 255, 0.973);">B.Tech Computer Science Engineering</span>  student at Lovely Professional University, passionate about solving complex problems through technology.</p>
-                    <p>My interests lie at the intersection of <span style="color: rgba(6, 226, 255, 0.973);">Artificial Intelligence, Machine Learning, and Natural Language Processing.</span>  I enjoy building innovative solutions that leverage these technologies to create meaningful impact.</p>
-                    <p>Beyond academics, I'm an avid <span style="color: rgba(6, 226, 255, 0.973);">football player</span> who has represented at the national level. I believe in the power of continuous learning and am constantly expanding my skillset through courses, projects, and research.</p>
+                    <p>Hello! I'm Jayant, a <span style="color: rgb(83, 94, 247);">B.Tech Computer Science Engineering</span> student at Lovely Professional University, passionate about solving complex problems through technology.</p>
+                    <p>My interests lie at the intersection of <span style="color:  rgb(83, 94, 247);">Artificial Intelligence, Machine Learning, and Natural Language Processing.</span> I enjoy building innovative solutions that leverage these technologies to create meaningful impact.</p>
+                    <p>Beyond academics, I'm an avid <span style="color:  rgb(83, 94, 247);">football player</span> who has represented at the national level. I believe in the power of continuous learning and am constantly expanding my skillset through courses, projects, and research.</p>
                     <a href="https://drive.google.com/file/d/1rZwZEnUTR74CT_kku5LU5rAuCJTivAic/view?usp=sharing" download class="btn btn-primary" style="margin-top: 20px;">
                         <i class="fas fa-download"></i> Download Resume
                     </a>
                 </div>
                 <div class="about-image">
-                    <img src="images/AirBrush_20250425020502.jpg" alt="About Me Image">
+                    <img src="/images/vintage-hand-about-me.png" alt="Workspace Setup">
                 </div>
-                
             </div>
         </div>
     </section>
@@ -82,7 +163,7 @@
                     <h3>Languages</h3>
                     <div class="skill-item">
                         <div class="skill-info">
-                            <span>C++</span>
+                            <span><i class="devicon-cplusplus-plain colored"></i> C++</span>
                             <span>90%</span>
                         </div>
                         <div class="progress-bar">
@@ -91,7 +172,7 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-info">
-                            <span>C</span>
+                            <span><i class="devicon-c-plain colored"></i> C</span>
                             <span>85%</span>
                         </div>
                         <div class="progress-bar">
@@ -100,7 +181,7 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-info">
-                            <span>Python</span>
+                            <span><i class="devicon-python-plain colored"></i> Python</span>
                             <span>85%</span>
                         </div>
                         <div class="progress-bar">
@@ -109,14 +190,13 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-info">
-                            <span>Java</span>
+                            <span><i class="devicon-java-plain colored"></i> Java</span>
                             <span>75%</span>
                         </div>
                         <div class="progress-bar">
                             <div class="progress" style="width: 75%;"></div>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="skill-category">
                     <h3>Soft Skills</h3>
@@ -168,10 +248,6 @@
         </div>
     </section>
 
-
-
-
-
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <div class="container">
@@ -216,264 +292,253 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project 4 -->
-                <!-- <div class="portfolio-item" data-category="web">
-                    <div class="portfolio-img">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 4">
-                        <div class="portfolio-overlay">
-                            <h3>Portfolio Website</h3>
-                            <p>Custom portfolio site for creative professional</p>
-                            <a href="#" class="view-project">View Project</a>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- Project 5 -->
-                <!-- <div class="portfolio-item" data-category="app">
-                    <div class="portfolio-img">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 5">
-                        <div class="portfolio-overlay">
-                            <h3>Fitness Tracker</h3>
-                            <p>Health and workout tracking application</p>
-                            <a href="#" class="view-project">View Project</a>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- Project 6 -->
-                <!-- <div class="portfolio-item" data-category="design">
-                    <div class="portfolio-img">
-                        <img src="https://via.placeholder.com/600x400" alt="Project 6">
-                        <div class="portfolio-overlay">
-                            <h3>UI/UX Redesign</h3>
-                            <p>Modern redesign for legacy application</p>
-                            <a href="#" class="view-project">View Project</a>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
 
-<!-- Certification Section -->
-<section id="certificates" class="portfolio">
-    <div class="container">
-        <h2 class="section-title">My <span>Certificates</span></h2>
-        <div class="portfolio-grid">
-            <!-- Certificate 1 -->
-            <div class="portfolio-item" data-category="web">
-                <div class="portfolio-img">
-                    <img src="images/Screenshot 2025-04-24 212721.png" alt="Cloud Computing Certificate">
-                    <div class="portfolio-overlay">
-                        <h3>Cloud Computing | NPTEL</h3>
-                        <p>An overview of cloud computing concepts including service models and virtualization</p>
-                        <a href="https://drive.google.com/file/d/1zFlKbCT-ReY9ST25DddegGWMu2ws9lfp/view?usp=sharing" class="view-certificate" data-certificate-id="1">View Details</a>
+    <!-- Certification Section -->
+    <section id="certificates" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">My <span>Certificates</span></h2>
+            <div class="portfolio-grid">
+                <!-- Certificate 1 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="images/Screenshot 2025-04-24 212721.png" alt="Cloud Computing Certificate">
+                        <div class="portfolio-overlay">
+                            <h3>Cloud Computing | NPTEL</h3>
+                            <p>An overview of cloud computing concepts including service models and virtualization</p>
+                            <a href="https://drive.google.com/file/d/1zFlKbCT-ReY9ST25DddegGWMu2ws9lfp/view?usp=sharing" class="view-certificate" data-certificate-id="1">View Details</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Certificate 2 -->
-            <div class="portfolio-item" data-category="app">
-                <div class="portfolio-img">
-                    <img src="images/Screenshot 2025-04-24 211337.png" alt="Interview Preparation Certificate">
-                    <div class="portfolio-overlay">
-                        <h3>Complete Interview Preparation | GeeksforGeeks</h3>
-                        <p>Covered key computer science topics including data structures and algorithms</p>
-                        <a href="https://drive.google.com/file/d/1fMKNijwQ8dTsZ219EqSP6YY6oNB7OXrd/view?usp=sharing" class="view-certificate" data-certificate-id="2">View Details</a>
+                <!-- Certificate 2 -->
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-img">
+                        <img src="images/Screenshot 2025-04-24 211337.png" alt="Interview Preparation Certificate">
+                        <div class="portfolio-overlay">
+                            <h3>Complete Interview Preparation | GeeksforGeeks</h3>
+                            <p>Covered key computer science topics including data structures and algorithms</p>
+                            <a href="https://drive.google.com/file/d/1fMKNijwQ8dTsZ219EqSP6YY6oNB7OXrd/view?usp=sharing" class="view-certificate" data-certificate-id="2">View Details</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Certificate 3 -->
-            <div class="portfolio-item" data-category="design">
-                <div class="portfolio-img">
-                    <img src="images/Screenshot 2025-04-24 211409.png" alt="Computer Networking Certificate">
-                    <div class="portfolio-overlay">
-                        <h3>The Bits and Bytes of Computer Networking | Google</h3>
-                        <p>Fundamentals of computer networking, including protocols and hardware</p>
-                        <a href="https://drive.google.com/file/d/1XGrT4fHVS2txN522oMAj3ndOiwE-qdNE/view?usp=sharing" class="view-certificate" data-certificate-id="3">View Details</a>
+                <!-- Certificate 3 -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-img">
+                        <img src="images/Screenshot 2025-04-24 211409.png" alt="Computer Networking Certificate">
+                        <div class="portfolio-overlay">
+                            <h3>The Bits and Bytes of Computer Networking | Google</h3>
+                            <p>Fundamentals of computer networking, including protocols and hardware</p>
+                            <a href="https://drive.google.com/file/d/1XGrT4fHVS2txN522oMAj3ndOiwE-qdNE/view?usp=sharing" class="view-certificate" data-certificate-id="3">View Details</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Certificate 4 -->
-            <div class="portfolio-item" data-category="web">
-                <div class="portfolio-img">
-                    <img src="images/Screenshot 2025-04-24 211503.png" alt="Algorithms Certificate">
-                    <div class="portfolio-overlay">
-                        <h3>Dynamic Programming, Greedy Algorithms | Coursera</h3>
-                        <p>Algorithmic problem-solving using dynamic programming techniques</p>
-                        <a href="https://drive.google.com/file/d/1K0EUimEeHOgswCb1vQoHulERUUhMG_Cz/view?usp=sharing" class="view-certificate" data-certificate-id="4">View Details</a>
+                <!-- Certificate 4 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="images/Screenshot 2025-04-24 211503.png" alt="Algorithms Certificate">
+                        <div class="portfolio-overlay">
+                            <h3>Dynamic Programming, Greedy Algorithms | Coursera</h3>
+                            <p>Algorithmic problem-solving using dynamic programming techniques</p>
+                            <a href="https://drive.google.com/file/d/1K0EUimEeHOgswCb1vQoHulERUUhMG_Cz/view?usp=sharing" class="view-certificate" data-certificate-id="4">View Details</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Certificate 5 -->
-            <div class="portfolio-item" data-category="app">
-                <div class="portfolio-img">
-                    <img src="images/Screenshot 2025-04-24 211541.png" alt="Generative AI Certificate">
-                    <div class="portfolio-overlay">
-                        <h3>Generative AI for Everyone | DeepLearning.AI</h3>
-                        <p>Basics of generative AI, its applications, and ethical considerations</p>
-                        <a href="https://drive.google.com/file/d/1-iSld1EayPYL_5HECl2DAq6Q-YUHKN2V/view?usp=sharing" class="view-certificate" data-certificate-id="5">View Details</a>
+                <!-- Certificate 5 -->
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-img">
+                        <img src="images/Screenshot 2025-04-24 211541.png" alt="Generative AI Certificate">
+                        <div class="portfolio-overlay">
+                            <h3>Generative AI for Everyone | DeepLearning.AI</h3>
+                            <p>Basics of generative AI, its applications, and ethical considerations</p>
+                            <a href="https://drive.google.com/file/d/1-iSld1EayPYL_5HECl2DAq6Q-YUHKN2V/view?usp=sharing" class="view-certificate" data-certificate-id="5">View Details</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Certificate 6 -->
-            <div class="portfolio-item" data-category="design">
-                <div class="portfolio-img">
-                    <img src="images/Screenshot 2025-04-24 211810.png" alt="LLM Certificate">
-                    <div class="portfolio-overlay">
-                        <h3>Introduction to Large Language Models | Google Cloud</h3>
-                        <p>Architecture and applications of large language models</p>
-                        <a href="https://drive.google.com/file/d/107IxEeyFy-AV05n3cBBUeVz7ooxs15DY/view?usp=sharing" class="view-certificate" data-certificate-id="6">View Details</a>
+                <!-- Certificate 6 -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-img">
+                        <img src="images/Screenshot 2025-04-24 211810.png" alt="LLM Certificate">
+                        <div class="portfolio-overlay">
+                            <h3>Introduction to Large Language Models | Google Cloud</h3>
+                            <p>Architecture and applications of large language models</p>
+                            <a href="https://drive.google.com/file/d/107IxEeyFy-AV05n3cBBUeVz7ooxs15DY/view?usp=sharing" class="view-certificate" data-certificate-id="6">View Details</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-
-    
-     <!-- Education Section -->
-     <section id="achievements" class="achievements">
+    <!-- Research Section -->
+    <section id="research" class="research">
         <div class="container">
-            <h2 class="section-title">My <span>Achievements</span></h2>
-            <div class="education-grid">
-                <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-graduation-cap"></i>
+            <h2 class="section-title">Research & <span>Publications</span></h2>
+            <div class="research-grid">
+                <div class="research-item">
+                    <div class="research-icon">
+                        <i class="fas fa-file-alt"></i>
                     </div>
-                    <div class="education-content">
-                        <h3>Research Paper Publication</h3>
-                        <h4>Part-of-Speech Tagging and Spellchecking in Telugu</h4>
-                        <span>Febuary 2025</span>
+                    <div class="research-content">
+                        <h3>Part-of-Speech Tagging and Spellchecking in Telugu</h3>
+                        <h4>Grenze International Journal of Engineering and Technology (GIJET)</h4>
+                        <span>February 2025</span>
                         <ul>
-                            <li><p>Published a Natural language processing research paper in Grenze International Journal of Engineering and Technology (GIJET).</p></li>
+                            <li>Published research paper on Natural Language Processing</li>
+                            <li>Developed an NLP system for Telugu language processing</li>
+                            <li>Utilized BiLSTM and CRF models for improved accuracy</li>
                         </ul>
                         <br>
                         <a href="https://thegrenze.com/index.php?display=page&view=journalabstract&absid=3983&id=8" class="view-public">View Publication</a>
-                        
-                    </div>
-                </div>
-                <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-futbol"></i>
-                    </div>
-                    <div class="education-content">
-                        <h3>Sports</h3>
-                        <h4>Football</h4>
-                        <span>2023</span>
-                        <ul>
-                            <li>Represented Lovely Professional University at the national level in football. </li>
-                        </ul>
-                       
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">My <span>Education</span></h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2022 - Present</div>
-                    <div class="timeline-content">
-                        <h3>Lovely Professional University</h3>
-                        <h4><span style="color: rgba(6, 226, 255, 0.973);">B.Tech (CSE)</span></h4>
-                        <h4>CGPA : 8.2</h4>
-                        <!-- <ul>
-                            <li>Lead development team in building scalable web applications</li>
-                            <li>Implemented CI/CD pipelines reducing deployment time by 40%</li>
-                            <li>Mentored junior developers and conducted code reviews</li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2021 - 2022</div>
-                    <div class="timeline-content">
-                        <h3>Kendriya Vidyalaya O.F. Chanda</h3>
-                        <h4><span style="color: rgba(6, 226, 255, 0.973);">Intermediate (PCM)</span></h4>
-                        <h4> Percentage: 76.7% </h4>
-                        <!-- <ul>
-                            <li>Developed and maintained company's flagship product</li>
-                            <li>Optimized database queries improving performance by 30%</li>
-                            <li>Collaborated with UX team to improve user experience</li>
-                        </ul> -->
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2019 - 2020</div>
-                    <div class="timeline-content">
-                        <h3>Kendriya Vidyalaya O.F. Chanda</h3>
-                        <h4><span style="color: rgba(6, 226, 255, 0.973);">Matriculation </span></h4>
-                        <h4>Percentage: 86.4%  </h4>
-                        <!-- <ul>
-                            <li>Built and maintained company website and internal tools</li>
-                            <li>Assisted in development of mobile application</li>
-                            <li>Participated in agile development processes</li>
-                        </ul> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- Contact Section -->
-<section id="contact" class="contact">
+    
+    <!-- Achievements Section -->
+<section id="achievements" class="achievements">
     <div class="container">
-        <h2 class="section-title">Get In <span>Touch</span></h2>
-        <div class="contact-content">
-            <div class="contact-info">
-                <h3>Contact Information</h3>
-                <p>Feel free to reach out for collaborations or just a friendly hello!</p>
-                <div class="info-item">
-                    <a href="mailto:singhjayant308@gmail.com" class="icon-link">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <span><a href="mailto:singhjayant308@gmail.com" class="contact-link"> singhjayant308@gmail.com</a></span>
+        <h2 class="section-title">My <span>Achievements</span></h2>
+        <div class="education-grid">
+            <div class="education-item football-bg-1">
+                <div class="education-icon">
+                    <i class="fas fa-futbol"></i>
                 </div>
-                <div class="info-item">
-                    <a href="https://www.linkedin.com/in/jayantarunsingh/" target="_blank" class="icon-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <span><a href="https://www.linkedin.com/in/jayantarunsingh/" target="_blank" class="contact-link"> linkedin.com/in/jayantarunsingh</a></span>
-                </div>
-                <div class="info-item">
-                    <a href="https://github.com/jayantarunsingh" target="_blank" class="icon-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <span><a href="https://github.com/jayantarunsingh" target="_blank" class="contact-link"> github.com/jayantarunsingh</a></span>
-                </div>
-                <div class="social-links">
-                    <a href="https://leetcode.com/u/singhjayant308/" target="_blank"><i class="fas fa-terminal"></i></a>
-                    <a href="https://www.instagram.com/jayantsingh394/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100038349889182" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <!-- <a href="https://behance.net/yourusername" target="_blank"><i class="fab fa-behance"></i></a> -->
+                <div class="education-content">
+                    <h3>National Level Football Representation</h3>
+                    <h4>Mumbai Region Football Team</h4>
+                    <span style="color:  rgb(83, 94, 247);">2019 & 2022</span>
+                    <ul>
+                        <li>Represented Mumbai Region in the National Football Championship twice</li>
+                        <li>Selected among top players from the region to compete at national level</li>
+                        <li>Played as a key center forward in the national team</li>
+                    </ul>
                 </div>
             </div>
-            <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" placeholder="Subject">
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+            <div class="education-item football-bg-2">
+                <div class="education-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="education-content">
+                    <h3>University Sports</h3>
+                    <h4>Lovely Professional University Football Team</h4>
+                    <span style="color:  rgb(83, 94, 247);">2023</span>
+                    <ul>
+                        <li>Represented LPU at the national level in football</li>
+                        <li>Part of the university's competitive football squad</li>
+                        <li>Contributed to team's success in inter-university tournaments</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </section>
+<section id="experience" class="experience">
+    <div class="container">
+        <h2 class="section-title">My <span>Education</span></h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2022 - Present</div>
+                <div class="timeline-content">
+                    <h3>Lovely Professional University</h3>
+                    <h4><span style="color: rgba(6, 226, 255, 0.973);">B.Tech (CSE)</span></h4>
+                    <h4>CGPA : 8.2</h4>
+                    <!-- <ul>
+                        <li>Lead development team in building scalable web applications</li>
+                        <li>Implemented CI/CD pipelines reducing deployment time by 40%</li>
+                        <li>Mentored junior developers and conducted code reviews</li>
+                    </ul> -->
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2021 - 2022</div>
+                <div class="timeline-content">
+                    <h3>Kendriya Vidyalaya O.F. Chanda</h3>
+                    <h4><span style="color: rgba(6, 226, 255, 0.973);">Intermediate (PCM)</span></h4>
+                    <h4> Percentage: 76.7% </h4>
+                    <!-- <ul>
+                        <li>Developed and maintained company's flagship product</li>
+                        <li>Optimized database queries improving performance by 30%</li>
+                        <li>Collaborated with UX team to improve user experience</li>
+                    </ul> -->
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2019 - 2020</div>
+                <div class="timeline-content">
+                    <h3>Kendriya Vidyalaya O.F. Chanda</h3>
+                    <h4><span style="color: rgba(6, 226, 255, 0.973);">Matriculation </span></h4>
+                    <h4>Percentage: 86.4%  </h4>
+                    <!-- <ul>
+                        <li>Built and maintained company website and internal tools</li>
+                        <li>Assisted in development of mobile application</li>
+                        <li>Participated in agile development processes</li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                    <div class="info-item">
+                        <a href="mailto:singhjayant308@gmail.com" class="icon-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <span><a href="mailto:singhjayant308@gmail.com" class="contact-link"> singhjayant308@gmail.com</a></span>
+                    </div>
+                    <div class="info-item">
+                        <a href="https://www.linkedin.com/in/jayantarunsingh/" target="_blank" class="icon-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <span><a href="https://www.linkedin.com/in/jayantarunsingh/" target="_blank" class="contact-link"> linkedin.com/in/jayantarunsingh</a></span>
+                    </div>
+                    <div class="info-item">
+                        <a href="https://github.com/jayantarunsingh" target="_blank" class="icon-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <span><a href="https://github.com/jayantarunsingh" target="_blank" class="contact-link"> github.com/jayantarunsingh</a></span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://leetcode.com/u/singhjayant308/" target="_blank"><i class="fas fa-terminal"></i></a>
+                        <a href="https://www.instagram.com/jayantsingh394/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100038349889182" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; <span id="year"></span> Your Name. All Rights Reserved.</p>
+            <p>&copy; <span id="year"></span> Jayant Singh. All Rights Reserved.</p>
         </div>
     </footer>
 

@@ -160,7 +160,6 @@ document.querySelectorAll('.view-project').forEach(button => {
                             </div>
                         </div>
                         <div class="modal-buttons">
-                            <a href="${projectData.demoLink}" class="btn btn-primary">Live Demo</a>
                             <a href="${projectData.codeLink}" class="btn btn-secondary">Source Code</a>
                         </div>
                     </div>
